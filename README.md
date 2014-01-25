@@ -1,4 +1,4 @@
 scroll-triggered-widget-area
 ============================
 
-Yet another  WprdPress plugin
+Yet another  WordPress plugin
