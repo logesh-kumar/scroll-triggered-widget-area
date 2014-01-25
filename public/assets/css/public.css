@@ -20,6 +20,10 @@
 	filter: alpha(opacity=30);
 }
 
+#scroll-item ul{
+	margin-left: 10px;
+}
+
 .spu-close:hover, .spu-close:focus {
 	color: #000;
 	text-decoration: none;

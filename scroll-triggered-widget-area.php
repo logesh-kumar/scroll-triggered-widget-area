@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Scroll Triggered Widget Area
  * Plugin URI:        http://logeshkumar.com
- * Description:       A simple plugin which triggers a widget area in the footer.
+ * Description:       A simple plugin which triggers a widget area in the footer with stunning animation options.
  * Version:           1.0.0
  * Author:            Logesh Kumar
  * Author URI:        http://logeshkumar.com
