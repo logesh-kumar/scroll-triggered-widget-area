@@ -5,17 +5,41 @@
 ?>
 
 <?php
-if( $options['stwa_placement'] == 'left' ) {	
-	echo '<div class="stwa_arrow"><img src="'.plugins_url('../assets/images/arrow_left.png', __FILE__).'"/></div>';
-} else {
-	echo '<div class="stwa_arrow"><img src="'.plugins_url('../assets/images/arrow_right.png', __FILE__).'"/></div>';
+
+function stwa_visible(){      
+ 
+	$options = get_option( 'stwa_settings');	
+    if( ( is_home() || is_front_page() ) && isset( $options['stwa_show']['frontpage'] ) ){
+    	return true;
+    }else if(is_single() && isset($options['stwa_show']['post'])){
+    	return true;
+    }else if(is_page() && isset($options['stwa_show']['page'])){
+    	return true;
+    } else {
+    	return false;
+    }
+   
 }
-dynamic_sidebar( 'scroll-triggered-widget' );
+
+
+if ( stwa_visible() ){
+
+    if( $options['stwa_placement'] == 'left' ) {	
+		echo '<div class="stwa_arrow"><img src="'.plugins_url('../assets/images/arrow_left.png', __FILE__).'"/></div>';
+	} else {
+		echo '<div class="stwa_arrow"><img src="'.plugins_url('../assets/images/arrow_right.png', __FILE__).'"/></div>';
+	}
+
+	dynamic_sidebar( 'scroll-triggered-widget' );
+}
+
 $defaults = array(
 	stwa_animation => "fadeInLeft fadeOutLeft",
 	stwa_cookie => "3",
 	stwa_display_height => "2000"
 );
+
+
 
 $options = wp_parse_args( $options, $defaults );
 $stwa_placement = $options["stwa_placement"];

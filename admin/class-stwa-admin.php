@@ -143,7 +143,19 @@ class stwa_Admin {
 
      function get_settings_fields() {
         $settings_fields = array(
-            'stwa_settings' => array(               
+            'stwa_settings' => array(    
+
+                array(
+                    'name' => 'stwa_show',
+                    'label' => __( 'Restrict Visibility', 'stwa' ),
+                    'desc' => __( 'Restrict visbility of the widget area to specific content types', 'stwa' ),
+                    'type' => 'multicheck',
+                    'options' => array(
+                        'page' => 'Page',
+                        'post' => 'Post',
+                        'frontpage' => 'FrontPage'                        
+                    )
+                ),           
 
                 array(
                     'name' => 'stwa_placement',
