@@ -128,6 +128,22 @@ class stwa_Admin {
 
         //initialize settings
         $this->settings_api->admin_init();
+
+        $stwa_options = get_option( 'stwa_settings', array() );
+        $stwa_defaults = array(   
+            'stwa_show' => array( 'post' => 'post', 'page' => 'page', 'frontpage' => 'frontpage' ),
+            'stwa_placement' => 'right', 
+            'stwa_width' => '400', 
+            'stwa_display_height' => '100',
+            'stwa_animation' => 'fadeIn fadeOut',
+            'stwa_bgcolor'=>'#fff',
+            'stwa_bordercolor'=>'#000',
+            'stwa_border_width' => '5',
+            'stwa_cookie' => '1'
+        );
+
+        $stwa_merged_options = wp_parse_args( $stwa_options, $stwa_defaults );
+        update_option( 'stwa_settings', $stwa_merged_options );
 			  		 
 	}
 
@@ -194,8 +210,7 @@ class stwa_Admin {
                     'type' => 'select',
                     'default' => 'no',
                     'options' => array(  
-                        "flipInX flipOutX" => "flip-X", 
-                        "flipInY flipOutY" => "flip-Y", 
+                       
                         "fadeIn fadeOut" => "fade",   
                         "fadeInUp fadeOutUp" => "fadeUp", 
                         "fadeInDown fadeOutDown" => "fadeDown",
@@ -218,7 +233,10 @@ class stwa_Admin {
                         "rotateInDownRight rotateOutDownRight" => "rotateDownRight", 
                         "rotateInUpLeft rotateOutUpLeft"  => "rotateUpLeft",
                         "rotateInUpRight rotateOutUpRight" => "rotateUpRight", 
-                        "lightSpeedIn lightSpeedOut" => "lightSpeed")
+                        "lightSpeedIn lightSpeedOut" => "lightSpeed",
+                        "flipInX flipOutX" => "flip-X", 
+                        "flipInY flipOutY" => "flip-Y",     
+                        )
                 ),
 
                 array(

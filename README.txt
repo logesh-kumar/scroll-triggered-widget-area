@@ -1,5 +1,5 @@
 === Scroll Triggered Widget ===
-Donate link: http://logeshkumar.com/
+Contributors: iniyan
 Tags: scroll triggered, widget area, popup, animation 
 Requires at least: 3.5.1
 Tested up to: 3.6
@@ -11,7 +11,7 @@ This plugin triggers a widget area when a user scrolls down the page. It comes w
 
 == Description ==
 
-Scroll Triggered Widget is not an actual widget. It defines a new widget area when activated. You can drag and drop any widget you wish like a normal widget area. The widget area will get triggered when you scroll down to the bottom of the page by default. But you can control the loation where it gets triggered in the plugin options page. The plugin comes with lot of customization options. 
+Scroll Triggered Widget is not an actual widget. It defines a new widget area when activated. You can drag and drop any widget you wish like a normal widget area. The widget area gets triggered when you scroll down to the bottom of the page by default. But you can control the loation where it gets triggered in the plugin options page. The plugin comes with lot of customization options. 
 
 **Plugin features**
 - 25 unique animation effects
@@ -20,7 +20,7 @@ Scroll Triggered Widget is not an actual widget. It defines a new widget area wh
 - Choose where the widget should display
 - Drag and drop any widget of your choice
 - Controll how long the widget area should be remain hidden when closed
-- Users can click the arrow in the bottom to revert the widget area
+- Users can click the moving arrow in the bottom to revert the widget area
 
 
 == Installation ==
