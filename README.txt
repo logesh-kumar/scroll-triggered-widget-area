@@ -1,5 +1,4 @@
 === Scroll Triggered Widget ===
-Contributors: iniyan
 Tags: scroll triggered, widget area, popup, animation 
 Requires at least: 3.5.1
 Tested up to: 3.6
@@ -50,5 +49,5 @@ Scroll Triggered Widget is not an actual widget. It defines a new widget area wh
 == Screenshots ==
 
 1. Settings page.
-2. A calander widget inside scroll-triggered-widget-area looks like this.
+2. Calander widget inside scroll-triggered-widget-area looks like this.
 

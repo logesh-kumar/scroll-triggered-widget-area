@@ -4,7 +4,7 @@ class Scroll_Triggered_Widget {
 	
 	const VERSION = '1.0.0';
 
-	protected $plugin_slug = 'stwaa';
+	protected $plugin_slug = 'stwa';
 
 	protected static $instance = null;
 
@@ -31,7 +31,7 @@ class Scroll_Triggered_Widget {
 			'description'   => __( 'Scroll Triggered Widget Area.', 'stwa' ),
 			'before_widget' => '<div id="scroll-item">',
 			'after_widget'  => '<span class="stwa-close">×</span></div>',
-			'before_title'  => '<h1 class="widget-title">',
+			'before_title'  => '<h1 id="stw-widget-title">',
 			'after_title'   => '</h1>',
 		) ); 
 

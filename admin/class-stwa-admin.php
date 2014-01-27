@@ -240,6 +240,14 @@ class stwa_Admin {
                 ),
 
                 array(
+                    'name' => 'stwa_title_color',
+                    'label' => __( 'Title Color', 'stwa' ),
+                    'desc' => __( 'Set color for the widget title text.', 'stwa' ),
+                    'type' => 'color',
+                    
+                ),                              
+
+                array(
                     'name' => 'stwa_border_width',
                     'label' => __( 'Border width in px', 'stwa' ),
                     'desc' => __( 'Border width of the widget area in px', 'stwa' ),

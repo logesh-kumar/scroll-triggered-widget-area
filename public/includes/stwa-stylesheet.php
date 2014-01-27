@@ -8,7 +8,8 @@ $defaults = array(
 	stwa_bordercolor => "#000",
 	stwa_border_width => "2",
 	stwa_placement => "right",
-	stwa_width => "400"
+	stwa_width => "400",	
+	stwa_title_color => "#000"
 );
 
 $options = get_option('stwa_settings');
@@ -19,6 +20,8 @@ $border_color = $options['stwa_bordercolor'];
 $border_width = $options['stwa_border_width'];	
 $placement = $options['stwa_placement'];
 $width = $options['stwa_width'];
+$title_color = $options['stwa_title_color'];
+$content_color = $options['stwa_content_color'];
 ?>
 
 #scroll-item {
@@ -34,7 +37,16 @@ $width = $options['stwa_width'];
 	display: none;
 	<?php echo $placement.":2px"; ?>;
 	z-index: 1000;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
 }
+
+#stw-widget-title, #stw-widget-title a{
+	color: <?php echo $title_color; ?>;
+}
+
+#stw-widget-title p, #stw-widget-title ul li, 
 
 .stwa_arrow{
 	position: fixed;
