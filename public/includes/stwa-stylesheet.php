@@ -8,7 +8,7 @@ $defaults = array(
 	stwa_bordercolor => "#000",
 	stwa_border_width => "2",
 	stwa_placement => "right",
-	stwa_width => "200"
+	stwa_width => "400"
 );
 
 $options = get_option('stwa_settings');

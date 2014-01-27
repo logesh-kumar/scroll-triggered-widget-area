@@ -176,6 +176,7 @@ class Scroll_Triggered_Widget {
 	 */
 	private static function single_activate() {
 		// @TODO: Define activation functionality here
+       
 		
 	}
 
